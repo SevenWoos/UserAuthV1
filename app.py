@@ -87,7 +87,7 @@ def login():
 # Only access dashboard if we're logged in
 @login_required
 def dashboard():
-    return render_template('dashboard.html')
+    return render_template('dashboard.html', user=current_user)
 
 
 @app.route('/logout', methods=['GET', 'POST'])
