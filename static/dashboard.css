@@ -11,3 +11,14 @@ body {
   color: white;
   text-align: center;
 }
+
+a {
+  margin-top: 1rem;
+  color: white;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #dcdcdc;
+}

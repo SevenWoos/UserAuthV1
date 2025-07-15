@@ -14,9 +14,20 @@
 
   <form method="POST" action="">
     {{ form.hidden_tag() }}
-    {{ form.username }}
-    {{ form.password }}
-    {{ form.submit}}
+
+    <div class="form-group">
+      <!-- {{ form.username }} -->
+      {{ form.username(class="form-control")}}
+    </div>
+
+    <div class="form-group">
+      <!-- {{ form.password }} -->
+      {{ form.password(class="form-control")}}
+    </div>
+
+    <div class="form-group">
+      {{ form.submit(class="submit-button")}}
+    </div>
   </form>
 
   <a href="{{url_for('login')}}">Already have an account? Log In!</a><br>
